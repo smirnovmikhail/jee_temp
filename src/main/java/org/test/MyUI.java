@@ -26,7 +26,7 @@ public class MyUI extends UI {
     protected void init(VaadinRequest vaadinRequest) {
         final VerticalLayout layout = new VerticalLayout();
 
-        Label releaseVersion = new Label("Release 1.0");
+        Label releaseVersion = new Label("Release 2.0");
 
         final TextField name = new TextField();
         name.setCaption("Type your name here:");
