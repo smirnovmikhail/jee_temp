@@ -25,7 +25,9 @@ public class MyUI extends UI {
     @Override
     protected void init(VaadinRequest vaadinRequest) {
         final VerticalLayout layout = new VerticalLayout();
-        
+
+        Label releaseVersion = new Label("Release 2.0");
+
         final TextField name = new TextField();
         name.setCaption("Type your name here:");
 
@@ -34,7 +36,8 @@ public class MyUI extends UI {
             layout.addComponent(new Label("Thanks " + name.getValue() 
                     + ", it works!"));
         });
-        
+
+        layout.addComponent(releaseVersion);
         layout.addComponents(name, button);
         layout.setMargin(true);
         layout.setSpacing(true);
