@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('SCM'){
             steps { 
-                git branch: 'master', url: 'https://github.com/smirnovmikhail/jee_temp.git'
+                git branch: 'jenkins', url: 'https://github.com/smirnovmikhail/jee_temp.git'
             }
         }
         stage ('Initialize') {
